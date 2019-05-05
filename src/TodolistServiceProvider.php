@@ -30,7 +30,7 @@ class TodolistServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang/whylab/todolist', 'todolist');
 
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/vendor/todolist'),
+            __DIR__.'/resources/views/whylab/todolist' => resource_path('views/vendor/todolist'),
             __DIR__.'/resources/lang/whylab/todolist' => resource_path('lang/vendor/todolist'),
         ], 'todolist');
 
