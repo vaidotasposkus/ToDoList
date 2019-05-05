@@ -4,6 +4,7 @@
     "type": "composer-plugin",
     "keywords": [
         "laravel",
+        "plugin",
         "todo",
         "todolist"
     ],
@@ -12,14 +13,19 @@
         {
             "name": "Vaidotas Poskus",
             "email": "vaidotas.poskus1@gmail.com",
+            "homepage": "",
             "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": "^7.1.3",
-        "laravel/framework": "5.8.*",
         "laravelcollective/html": "^5.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "mockery/mockery": "^1.0"
     },
     "extra": {
         "laravel": {
@@ -31,6 +37,11 @@
     "autoload": {
         "psr-4": {
             "Laravel\\Todolist\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravel\\Todolist\\Test\\": "tests"
         }
     }
 }

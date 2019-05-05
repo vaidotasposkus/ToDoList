@@ -13,12 +13,14 @@ return [
     |
     */
 
-    'title' => 'ToDo list',
+    'title' => 'ToDo List',
+
+    'text' => [
+        'edit' => 'Edit: ',
+        'add' => 'Add New Task: '
+    ],
+
     'todoTable' => [
-        'text' => [
-            'edit' => 'Edit: ',
-            'add' => 'Add New Task: '
-        ],
         'placeholder' => 'Enter you E-mail address',
         'button' => 'Subscribe'
     ]

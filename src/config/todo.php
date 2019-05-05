@@ -2,5 +2,4 @@
 
 return [
     'useBootstrap' => true
-
 ];

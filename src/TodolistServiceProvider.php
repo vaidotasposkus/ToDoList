@@ -14,7 +14,7 @@ class TodolistServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->make('Laravel\Todolist\Http\Controllers\TaskController');
-        $this->mergeConfigFrom(__DIR__.'/config/todo.php', 'todo');
+        $this->mergeConfigFrom(__DIR__.'/config/todo.php', 'todolist');
     }
 
     /**
