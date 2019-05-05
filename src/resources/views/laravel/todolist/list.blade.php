@@ -21,24 +21,26 @@
 	<table class="table table-bordered table-striped">
 		<thead>
 		<tr>
-			<th>Name</th>
-			<th>Action</th>
+			<th scope="col">Name</th>
+			<th scope="col">Name</th>
+			<th scope="col">Action</th>
 		</tr>
 		</thead>
 		<tbody>
-		@foreach($tasks as $task)
-			<tr>
-				<td>{{ $task->name }}</td>
-				<td>
-					{!! Form::open(['route' => ['todo.destroy', $task->id], 'method' => 'delete']) !!}
-					<div class='btn-group'>
-						<a href="{!! route('todo.edit', [$task->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
-						{!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
-					</div>
-					{!! Form::close() !!}
-				</td>
-			</tr>
-		@endforeach
+			@foreach($tasks as $task)
+				<tr>
+					<td>{{ $task->id }}</td>
+					<td>{{ $task->name }}</td>
+					<td>
+						{!! Form::open(['route' => ['todo.destroy', $task->id], 'method' => 'delete']) !!}
+						<div class='btn-group'>
+							<a href="{!! route('todo.edit', [$task->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+							{!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
+						</div>
+						{!! Form::close() !!}
+					</td>
+				</tr>
+			@endforeach
 		</tbody>
 	</table>
 @endsection
