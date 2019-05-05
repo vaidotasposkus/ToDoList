@@ -14,14 +14,34 @@ return [
     */
 
     'title' => 'ToDo List',
-
     'text' => [
-        'edit' => 'Edit: ',
+        'edit' => 'Edit Task: ',
         'add' => 'Add New Task: '
     ],
-
+    'form' => [
+        'placeholder' => 'Add new task',
+        'buttons' => [
+            'add' => 'Add',
+            'update' => 'Update',
+            'title' => [
+                'add' => 'Add New Task',
+                'update' => 'Update Task'
+            ]
+        ]
+    ],
     'todoTable' => [
+        'title' => 'Tasks To Do',
         'placeholder' => 'Enter you E-mail address',
-        'button' => 'Subscribe'
-    ]
+        'header' => [
+            'id' => '#',
+            'name' => 'ToDo',
+            'action' => 'Action'
+        ],
+        'buttons' => [
+            'edit' => 'Edit',
+            'delete' => 'Delete'
+        ],
+        'deleteException' => 'Are you sure?'
+    ],
+
 ];
