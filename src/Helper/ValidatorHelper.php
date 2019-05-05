@@ -1,7 +1,6 @@
 <?php
 
-namespace Laravel\Todolist\Helper;
-
+namespace Whylab\Todolist\Helper;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

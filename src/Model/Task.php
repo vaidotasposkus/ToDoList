@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Todolist\Model;
+namespace Whylab\Todolist\Model;
 
 use Illuminate\Database\Eloquent\Model;
 

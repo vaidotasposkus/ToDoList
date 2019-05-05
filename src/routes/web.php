@@ -10,7 +10,7 @@
 |
 */
 
-Route::group(['namespace' => 'Laravel\Todolist\Http\Controllers', 'middleware' => ['web']], function () {
+Route::group(['namespace' => 'Whylab\Todolist\Http\Controllers', 'middleware' => ['web']], function () {
     Route::resource('/todo', 'TaskController');
 });
 

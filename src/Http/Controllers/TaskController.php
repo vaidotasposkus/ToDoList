@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Todolist\Http\Controllers;
+namespace Whylab\Todolist\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Laravel\Todolist\Helper\ValidatorHelper;
-use Laravel\Todolist\Model\Task;
+use Whylab\Todolist\Helper\ValidatorHelper;
+use Whylab\Todolist\Model\Task;
 
 class TaskController extends Controller
 {

@@ -1,5 +1,5 @@
 {
-    "name": "laravel/todolist",
+    "name": "whylab/todolist",
     "description": "You can create the to-do-list of your task.",
     "type": "composer-plugin",
     "keywords": [
@@ -29,18 +29,18 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Laravel\\Todolist\\TodolistServiceProvider"
+                "Whylab\\Todolist\\TodolistServiceProvider"
             ]
         }
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Todolist\\": "src/"
+            "Whylab\\Todolist\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravel\\Todolist\\Test\\": "tests"
+            "Whylab\\Todolist\\Test\\": "tests"
         }
     }
 }
