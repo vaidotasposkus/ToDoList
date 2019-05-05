@@ -39,5 +39,4 @@ class ValidatorHelper
     {
         return Validator::make($this->request->all(), $this->rules, $this->messages);
     }
-
 }
